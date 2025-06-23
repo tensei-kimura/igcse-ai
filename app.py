@@ -9,7 +9,7 @@ topic = st.selectbox("Choose a topic", ["Forces", "Waves", "Atoms", "Photosynthe
 question_type = st.selectbox("Question type", ["Multiple Choice", "Short Answer"])
 
 # Hugging Face APIの情報
-API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"
+API_URL = "https://api-inference.huggingface.co/models/tiiuae/falcon-7b-instruct"
 API_KEY = st.secrets["huggingface"]["api_key"]  # secrets.toml または Streamlit Cloud Secrets から読み込む
 
 headers = {
